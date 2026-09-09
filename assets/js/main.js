@@ -21,13 +21,13 @@
       nav_cta: "Κλείσε θέση",
 
       hero_kicker: "Άγιοι Ανάργυροι · Αγγλικά · Ισπανικά · Γερμανικά",
-      hero_h1: 'Ξένες γλώσσες που τα παιδιά <span class="hl">αγαπούν να μαθαίνουν</span>',
+      hero_h1: 'Μάθε ξένες γλώσσες <span class="hl">με τρόπο που σου μένει</span>',
       hero_sub: "Μικρά τμήματα, βιωματικά μαθήματα και σταθερή προετοιμασία για πτυχία — για παιδιά, εφήβους και ενήλικες.",
       hero_cta1: "Κλείσε δωρεάν αξιολόγηση",
       hero_cta2: "Δες το ωράριο",
       hero_trust: "Βραβευμένο σχολείο · Αετοί της Εκπαίδευσης 2024 · 2025 · 2026",
       card_title: "Το πρόγραμμά μου",
-      card_level: "Επίπεδο 7 ★",
+      card_level: "3 μαθήματα / εβδομάδα",
 
       stat1_v: "3 χρονιές", stat1_l: "βραβείο «Αετοί της Εκπαίδευσης»",
       stat2_l: "πιστοποιημένο εξεταστικό κέντρο",
@@ -110,13 +110,13 @@
       nav_cta: "Book now",
 
       hero_kicker: "Agioi Anargyroi · English · Spanish · German",
-      hero_h1: 'Foreign languages kids <span class="hl">actually love learning</span>',
+      hero_h1: 'Learn a language <span class="hl">in a way that sticks</span>',
       hero_sub: "Small groups, hands-on lessons and steady exam preparation — for children, teenagers and adults.",
       hero_cta1: "Book a free assessment",
       hero_cta2: "See the schedule",
       hero_trust: "Award-winning school · Eagles of Education 2024 · 2025 · 2026",
       card_title: "My timetable",
-      card_level: "Level 7 ★",
+      card_level: "3 lessons / week",
 
       stat1_v: "3 years", stat1_l: "“Eagles of Education” award winner",
       stat2_l: "certified ESB examination centre",
@@ -199,13 +199,13 @@
       nav_cta: "Reservar",
 
       hero_kicker: "Agioi Anargyroi · Inglés · Español · Alemán",
-      hero_h1: 'Idiomas que los niños <span class="hl">aman aprender</span>',
+      hero_h1: 'Aprende idiomas <span class="hl">de una forma que se queda</span>',
       hero_sub: "Grupos reducidos, clases prácticas y preparación constante de exámenes — para niños, adolescentes y adultos.",
       hero_cta1: "Reserva una evaluación gratis",
       hero_cta2: "Ver el horario",
       hero_trust: "Escuela premiada · Águilas de la Educación 2024 · 2025 · 2026",
       card_title: "Mi horario",
-      card_level: "Nivel 7 ★",
+      card_level: "3 clases / semana",
 
       stat1_v: "3 años", stat1_l: "premio “Águilas de la Educación”",
       stat2_l: "centro examinador ESB certificado",
@@ -288,13 +288,13 @@
       nav_cta: "Platz buchen",
 
       hero_kicker: "Agioi Anargyroi · Englisch · Spanisch · Deutsch",
-      hero_h1: 'Fremdsprachen, die Kinder <span class="hl">gerne lernen</span>',
+      hero_h1: 'Eine Sprache lernen, <span class="hl">die bleibt</span>',
       hero_sub: "Kleine Gruppen, praxisnaher Unterricht und kontinuierliche Prüfungsvorbereitung — für Kinder, Jugendliche und Erwachsene.",
       hero_cta1: "Kostenlose Einstufung buchen",
       hero_cta2: "Zum Stundenplan",
       hero_trust: "Ausgezeichnete Schule · Adler der Bildung 2024 · 2025 · 2026",
       card_title: "Mein Stundenplan",
-      card_level: "Stufe 7 ★",
+      card_level: "3 Einheiten / Woche",
 
       stat1_v: "3 Jahre", stat1_l: "Preis „Adler der Bildung“",
       stat2_l: "zertifiziertes ESB-Prüfungszentrum",
