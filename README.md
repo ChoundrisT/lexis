@@ -1,11 +1,11 @@
-# Λέξις — Κέντρο Ξένων Γλωσσών (website)
+# Λέξις · Κέντρο Ξένων Γλωσσών (website)
 
 Static one-page site for the Lexis Giannoulatou language school in Agioi Anargyroi.
 Greek by default, with an **EL / EN / ES / DE** language switcher.
 
 ## Stack
 
-The lightest thing that does the job — **no build step, no framework, no dependencies**:
+The lightest thing that does the job. **No build step, no framework, no dependencies**:
 
 | | |
 |---|---|
@@ -29,14 +29,14 @@ Add `?lang=en` (or `es` / `de`) to the URL to force a language while testing.
 
 ## Deploy
 
-Drop the `site/` folder on any of these — all free, all static:
+Drop the `site/` folder on any of these. All free, all static:
 
-- **Netlify** — drag the folder onto app.netlify.com/drop. The contact form works automatically (see below).
-- **Cloudflare Pages** / **GitHub Pages** / **Vercel** — point at this folder, no build command, output dir = `site`.
+- **Netlify**: drag the folder onto app.netlify.com/drop. The contact form works automatically (see below).
+- **Cloudflare Pages** / **GitHub Pages** / **Vercel**: point at this folder, no build command, output dir = `site`.
 
 ## Editing content
 
-**All text lives in `assets/js/main.js`** in the `I18N` object — one block per language (`el`, `en`, `es`, `de`).
+**All text lives in `assets/js/main.js`** in the `I18N` object, one block per language (`el`, `en`, `es`, `de`).
 Each key matches a `data-i18n="..."` attribute in `index.html`. Change the value, done.
 Values may contain simple HTML (`<strong>`, `<em>`, `<span class="hl">`, `<br>`).
 
@@ -60,10 +60,10 @@ Search for `[` and `επιβεβαίωση` / `to confirm` / `placeholder`:
 - Whether **French** is offered
 - Years in operation, students per class
 - Real parent/graduate testimonials
-- `about_p2` — the school's story / philosophy
-- Real **logo** — save it as `assets/img/logo.png` (see `assets/img/README.md`).
+- `about_p2`: the school's story / philosophy
+- Real **logo**: save it as `assets/img/logo.png` (see `assets/img/README.md`).
   Until it's there the header shows a gold star-ring fallback.
-- **Photos** — hero currently uses a coloured shape placeholder
+- **Photos**: hero currently uses a coloured shape placeholder
 - `[Privacy Policy]` link
 - Confirm the Google Maps embed points at the right spot
 
