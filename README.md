@@ -61,8 +61,9 @@ Search for `[` and `επιβεβαίωση` / `to confirm` / `placeholder`:
 - Years in operation, students per class
 - Real parent/graduate testimonials
 - `about_p2` — the school's story / philosophy
-- Real **logo** (the header currently uses a small drawn bee mark) and **photos**
-  (hero has a coloured blob placeholder)
+- Real **logo** — save it as `assets/img/logo.png` (see `assets/img/README.md`).
+  Until it's there the header shows a gold star-ring fallback.
+- **Photos** — hero currently uses a coloured shape placeholder
 - `[Privacy Policy]` link
 - Confirm the Google Maps embed points at the right spot
 
