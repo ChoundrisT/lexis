@@ -2,9 +2,10 @@
 
 Drop the real assets here. The site already references these paths:
 
-## `logo.png`  ← add this
+## `logo.png`  ✓ in place
 
-The "Lexis / My School" logo (stars ring + winged lion + book).
+The "Lexis / My School" logo (stars ring + winged lion + book), 256×256.
+Replace this file to update it everywhere (header, footer, favicon, share image).
 
 - Used in the header, the footer, the favicon and the social share image.
 - The header/footer show it inside a **white rounded chip**, so the version
