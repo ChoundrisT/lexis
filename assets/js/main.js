@@ -13,14 +13,14 @@
   var I18N = {
     el: {
       meta_title: "Λέξις · Κέντρο Ξένων Γλωσσών | Άγιοι Ανάργυροι",
-      meta_desc: "Κέντρο Ξένων Γλωσσών Λέξις Γιαννουλάτου στους Αγίους Αναργύρους. Αγγλικά, Ισπανικά, Γερμανικά για παιδιά, εφήβους και ενήλικες. Βραβευμένο σχολείο, προετοιμασία εξετάσεων ESB.",
+      meta_desc: "Κέντρο Ξένων Γλωσσών Λέξις Γιαννουλάτου στους Αγίους Αναργύρους. Αγγλικά, Ισπανικά, Γαλλικά για παιδιά, εφήβους και ενήλικες. Βραβευμένο σχολείο, προετοιμασία εξετάσεων ESB.",
       skip: "Μετάβαση στο περιεχόμενο",
 
       nav_home: "Αρχική", nav_school: "Το Σχολείο", nav_languages: "Γλώσσες",
       nav_exams: "Μέθοδος", nav_schedule: "Ωράριο", nav_contact: "Επικοινωνία",
       nav_cta: "Κλείσε θέση",
 
-      hero_kicker: "Άγιοι Ανάργυροι · Αγγλικά · Ισπανικά · Γερμανικά",
+      hero_kicker: "Άγιοι Ανάργυροι · Αγγλικά · Ισπανικά · Γαλλικά",
       hero_h1: 'Μάθε ξένες γλώσσες <span class="hl">με τρόπο που σου μένει</span>',
       hero_sub: "Μικρά τμήματα, βιωματικά μαθήματα και σταθερή προετοιμασία για πτυχία. Για παιδιά, εφήβους και ενήλικες.",
       hero_cta1: "Κλείσε δωρεάν αξιολόγηση",
@@ -29,7 +29,7 @@
       card_title: "Το πρόγραμμά μου",
       card_level: "3 μαθήματα / εβδομάδα",
 
-      stat1_v: "3 γλώσσες", stat1_l: "Αγγλικά · Ισπανικά · Γερμανικά",
+      stat1_v: "3 γλώσσες", stat1_l: "Αγγλικά · Ισπανικά · Γαλλικά",
       awards_title: "Βραβευμένο σχολείο",
       awards_sub: "Επιλογή στους «Αετοί της Εκπαίδευσης» τρεις συνεχόμενες χρονιές.",
       stat2_l: "πιστοποιημένο εξεταστικό κέντρο",
@@ -37,7 +37,7 @@
       stat4_v: "[25]+ χρόνια", stat4_l: "στους Αγίους Αναργύρους · <em>επιβεβαίωση</em>",
 
       about_title: "Λίγα λόγια για εμάς",
-      about_p1: "Το Κέντρο Ξένων Γλωσσών <strong>Λέξις</strong> βρίσκεται στους Αγίους Αναργύρους και διδάσκει Αγγλικά, Ισπανικά και Γερμανικά σε όλες τις ηλικίες. Δουλεύουμε με μικρά τμήματα και σύγχρονες, βιωματικές μεθόδους, με στόχο τη σταθερή πρόοδο και την επιτυχία στις εξετάσεις.",
+      about_p1: "Το Κέντρο Ξένων Γλωσσών <strong>Λέξις</strong> βρίσκεται στους Αγίους Αναργύρους και διδάσκει Αγγλικά, Ισπανικά και Γαλλικά σε όλες τις ηλικίες. Δουλεύουμε με μικρά τμήματα και σύγχρονες, βιωματικές μεθόδους, με στόχο τη σταθερή πρόοδο και την επιτυχία στις εξετάσεις.",
       about_p2: "<em>Κείμενο placeholder: συμπλήρωσέ το με την ιστορία και τη φιλοσοφία του σχολείου.</em>",
       about_journey: "Από την αξιολόγηση στο πτυχίο",
       about_b1: "Δωρεάν αξιολόγηση επιπέδου",
@@ -47,13 +47,13 @@
 
       lang_title: "Διάλεξε τη γλώσσα σου",
       lang_sub: "Από τα πρώτα βήματα μέχρι το πτυχίο C2, με πρόγραμμα που ταιριάζει σε κάθε ηλικία.",
+      lang_details: "Επίπεδα",
       lang_en_name: "Αγγλικά",
       lang_en_desc: 'Όλα τα επίπεδα A1–C2. Προετοιμασία για ESB και <span class="muted">[Cambridge, LanguageCert, Michigan (επιβεβαίωση)]</span>.',
       lang_es_name: "Ισπανικά",
       lang_es_desc: 'Όλα τα επίπεδα. Προετοιμασία για <span class="muted">[DELE / LanguageCert USAL esPro (επιβεβαίωση)]</span>.',
-      lang_de_name: "Γερμανικά",
-      lang_de_desc: 'Όλα τα επίπεδα. Προετοιμασία για <span class="muted">[Goethe-Zertifikat / ÖSD (επιβεβαίωση)]</span>.',
-      lang_more: "Επίσης: <strong>Γαλλικά</strong> <em>(προς επιβεβαίωση)</em>",
+      lang_fr_name: "Γαλλικά",
+      lang_fr_desc: 'Όλα τα επίπεδα A1–C2. Μαθήματα γαλλικών με έμφαση στην επικοινωνία, την κατανόηση και τη γραφή.',
 
       method_title: "Πώς μαθαίνουμε",
       method_sub: "<em>επιβεβαίωσε / προσάρμοσε τα κείμενα</em>",
@@ -63,9 +63,9 @@
       m4_t: "Παρακολούθηση προόδου", m4_d: "Τακτική επικοινωνία με τους γονείς και ατομικοί στόχοι.",
 
       ages_title: "Για κάθε ηλικία",
-      age1_tag: "ΠΑΙΔΙΑ", age1_t: "Δημοτικό", age1_d: "Πρώτη επαφή με τη γλώσσα μέσα από παιχνίδι.",
-      age2_tag: "ΕΦΗΒΟΙ", age2_t: "Γυμνάσιο–Λύκειο", age2_d: "Σταθερή πορεία προς τα πτυχία.",
-      age3_tag: "ΕΝΗΛΙΚΕΣ", age3_t: "Ευέλικτα τμήματα", age3_d: "Για δουλειά, σπουδές ή ταξίδι.",
+      age1_tag: "ΠΑΙΔΙΑ", age1_t: "&lt;12 χρονών", age1_d: "Πρώτη επαφή με τη γλώσσα μέσα από παιχνίδι.",
+      age2_tag: "ΕΦΗΒΟΙ", age2_t: "13–18 χρονών", age2_d: "Σταθερή πορεία προς τα πτυχία.",
+      age3_tag: "ΕΝΗΛΙΚΕΣ", age3_t: "19–99+ χρονών", age3_d: "Για δουλειά, σπουδές ή ταξίδι.",
       age4_tag: "ΕΝΤΑΤΙΚΑ", age4_t: "Πτυχία σε 1 έτος", age4_d: "Ταχύρρυθμη προετοιμασία B2 &amp; C2.",
 
       sched_title: "Ωράριο &amp; εγγραφές",
@@ -105,14 +105,14 @@
 
     en: {
       meta_title: "Lexis · Language School | Agioi Anargyroi, Athens",
-      meta_desc: "Lexis Giannoulatou language school in Agioi Anargyroi, Athens. English, Spanish and German for children, teenagers and adults. Award-winning school, ESB exam preparation.",
+      meta_desc: "Lexis Giannoulatou language school in Agioi Anargyroi, Athens. English, Spanish and French for children, teenagers and adults. Award-winning school, ESB exam preparation.",
       skip: "Skip to content",
 
       nav_home: "Home", nav_school: "The School", nav_languages: "Languages",
       nav_exams: "Method", nav_schedule: "Schedule", nav_contact: "Contact",
       nav_cta: "Book now",
 
-      hero_kicker: "Agioi Anargyroi · English · Spanish · German",
+      hero_kicker: "Agioi Anargyroi · English · Spanish · French",
       hero_h1: 'Learn a language <span class="hl">in a way that sticks</span>',
       hero_sub: "Small groups, hands-on lessons and steady exam preparation. For children, teenagers and adults.",
       hero_cta1: "Book a free assessment",
@@ -121,7 +121,7 @@
       card_title: "My timetable",
       card_level: "3 lessons / week",
 
-      stat1_v: "3 languages", stat1_l: "English · Spanish · German",
+      stat1_v: "3 languages", stat1_l: "English · Spanish · French",
       awards_title: "An award-winning school",
       awards_sub: "Selected for the “Eagles of Education” three years running.",
       stat2_l: "certified ESB examination centre",
@@ -129,7 +129,7 @@
       stat4_v: "[25]+ years", stat4_l: "in Agioi Anargyroi · <em>to confirm</em>",
 
       about_title: "A bit about us",
-      about_p1: "The <strong>Lexis</strong> language school is based in Agioi Anargyroi and teaches English, Spanish and German to all ages. We work in small groups with modern, hands-on methods, aiming for steady progress and exam success.",
+      about_p1: "The <strong>Lexis</strong> language school is based in Agioi Anargyroi and teaches English, Spanish and French to all ages. We work in small groups with modern, hands-on methods, aiming for steady progress and exam success.",
       about_p2: "<em>Placeholder text: fill in with the school's story and philosophy.</em>",
       about_journey: "From assessment to certificate",
       about_b1: "Free level assessment",
@@ -139,13 +139,13 @@
 
       lang_title: "Choose your language",
       lang_sub: "From first steps to a C2 certificate, with a programme that fits every age.",
+      lang_details: "Levels",
       lang_en_name: "English",
       lang_en_desc: 'All levels A1–C2. Preparation for ESB and <span class="muted">[Cambridge, LanguageCert, Michigan (to confirm)]</span>.',
       lang_es_name: "Spanish",
       lang_es_desc: 'All levels. Preparation for <span class="muted">[DELE / LanguageCert USAL esPro (to confirm)]</span>.',
-      lang_de_name: "German",
-      lang_de_desc: 'All levels. Preparation for <span class="muted">[Goethe-Zertifikat / ÖSD (to confirm)]</span>.',
-      lang_more: "Also offered: <strong>French</strong> <em>(to confirm)</em>",
+      lang_fr_name: "French",
+      lang_fr_desc: "All levels A1–C2. French courses focused on communication, comprehension and writing.",
 
       method_title: "How we teach",
       method_sub: "<em>confirm / adjust this copy</em>",
@@ -155,9 +155,9 @@
       m4_t: "Progress tracking", m4_d: "Regular contact with parents and individual goals.",
 
       ages_title: "For every age",
-      age1_tag: "CHILDREN", age1_t: "Primary school", age1_d: "A first taste of the language through play.",
-      age2_tag: "TEENS", age2_t: "Secondary school", age2_d: "A steady path towards certificates.",
-      age3_tag: "ADULTS", age3_t: "Flexible classes", age3_d: "For work, studies or travel.",
+      age1_tag: "CHILDREN", age1_t: "&lt;12 years", age1_d: "A first taste of the language through play.",
+      age2_tag: "TEENS", age2_t: "13–18 years", age2_d: "A steady path towards certificates.",
+      age3_tag: "ADULTS", age3_t: "19–99+ years", age3_d: "For work, studies or travel.",
       age4_tag: "INTENSIVE", age4_t: "Certificate in 1 year", age4_d: "Fast-track preparation for B2 &amp; C2.",
 
       sched_title: "Schedule &amp; enrolment",
@@ -197,14 +197,14 @@
 
     es: {
       meta_title: "Lexis · Escuela de idiomas | Agioi Anargyroi, Atenas",
-      meta_desc: "Escuela de idiomas Lexis Giannoulatou en Agioi Anargyroi, Atenas. Inglés, español y alemán para niños, adolescentes y adultos. Escuela premiada, preparación de exámenes ESB.",
+      meta_desc: "Escuela de idiomas Lexis Giannoulatou en Agioi Anargyroi, Atenas. Inglés, español y francés para niños, adolescentes y adultos. Escuela premiada, preparación de exámenes ESB.",
       skip: "Saltar al contenido",
 
       nav_home: "Inicio", nav_school: "La Escuela", nav_languages: "Idiomas",
       nav_exams: "Método", nav_schedule: "Horario", nav_contact: "Contacto",
       nav_cta: "Reservar",
 
-      hero_kicker: "Agioi Anargyroi · Inglés · Español · Alemán",
+      hero_kicker: "Agioi Anargyroi · Inglés · Español · Francés",
       hero_h1: 'Aprende idiomas <span class="hl">de una forma que se queda</span>',
       hero_sub: "Grupos reducidos, clases prácticas y preparación constante de exámenes. Para niños, adolescentes y adultos.",
       hero_cta1: "Reserva una evaluación gratis",
@@ -213,7 +213,7 @@
       card_title: "Mi horario",
       card_level: "3 clases / semana",
 
-      stat1_v: "3 idiomas", stat1_l: "Inglés · Español · Alemán",
+      stat1_v: "3 idiomas", stat1_l: "Inglés · Español · Francés",
       awards_title: "Escuela premiada",
       awards_sub: "Seleccionada en las «Águilas de la Educación» tres años seguidos.",
       stat2_l: "centro examinador ESB certificado",
@@ -221,7 +221,7 @@
       stat4_v: "[25]+ años", stat4_l: "en Agioi Anargyroi · <em>por confirmar</em>",
 
       about_title: "Sobre nosotros",
-      about_p1: "La escuela de idiomas <strong>Lexis</strong> está en Agioi Anargyroi y enseña inglés, español y alemán a todas las edades. Trabajamos en grupos reducidos con métodos modernos y prácticos, buscando un progreso constante y el éxito en los exámenes.",
+      about_p1: "La escuela de idiomas <strong>Lexis</strong> está en Agioi Anargyroi y enseña inglés, español y francés a todas las edades. Trabajamos en grupos reducidos con métodos modernos y prácticos, buscando un progreso constante y el éxito en los exámenes.",
       about_p2: "<em>Texto de ejemplo: complétalo con la historia y la filosofía de la escuela.</em>",
       about_journey: "De la evaluación al título",
       about_b1: "Evaluación de nivel gratuita",
@@ -231,13 +231,13 @@
 
       lang_title: "Elige tu idioma",
       lang_sub: "Desde los primeros pasos hasta el título C2, con un programa para cada edad.",
+      lang_details: "Niveles",
       lang_en_name: "Inglés",
       lang_en_desc: 'Todos los niveles A1–C2. Preparación para ESB y <span class="muted">[Cambridge, LanguageCert, Michigan (por confirmar)]</span>.',
       lang_es_name: "Español",
       lang_es_desc: 'Todos los niveles. Preparación para <span class="muted">[DELE / LanguageCert USAL esPro (por confirmar)]</span>.',
-      lang_de_name: "Alemán",
-      lang_de_desc: 'Todos los niveles. Preparación para <span class="muted">[Goethe-Zertifikat / ÖSD (por confirmar)]</span>.',
-      lang_more: "También: <strong>Francés</strong> <em>(por confirmar)</em>",
+      lang_fr_name: "Francés",
+      lang_fr_desc: "Todos los niveles A1–C2. Cursos de francés centrados en la comunicación, la comprensión y la escritura.",
 
       method_title: "Cómo enseñamos",
       method_sub: "<em>confirma / ajusta este texto</em>",
@@ -247,9 +247,9 @@
       m4_t: "Seguimiento del progreso", m4_d: "Contacto regular con las familias y objetivos individuales.",
 
       ages_title: "Para todas las edades",
-      age1_tag: "NIÑOS", age1_t: "Primaria", age1_d: "Un primer contacto con el idioma jugando.",
-      age2_tag: "ADOLESCENTES", age2_t: "Secundaria", age2_d: "Un camino firme hacia los títulos.",
-      age3_tag: "ADULTOS", age3_t: "Clases flexibles", age3_d: "Para el trabajo, los estudios o viajar.",
+      age1_tag: "NIÑOS", age1_t: "&lt;12 años", age1_d: "Un primer contacto con el idioma jugando.",
+      age2_tag: "ADOLESCENTES", age2_t: "13–18 años", age2_d: "Un camino firme hacia los títulos.",
+      age3_tag: "ADULTOS", age3_t: "19–99+ años", age3_d: "Para el trabajo, los estudios o viajar.",
       age4_tag: "INTENSIVO", age4_t: "Título en 1 año", age4_d: "Preparación acelerada para B2 y C2.",
 
       sched_title: "Horario e inscripciones",
@@ -287,100 +287,100 @@
       ft_pages: "PÁGINAS", ft_lang: "IDIOMA"
     },
 
-    de: {
-      meta_title: "Lexis · Sprachschule | Agioi Anargyroi, Athen",
-      meta_desc: "Sprachschule Lexis Giannoulatou in Agioi Anargyroi, Athen. Englisch, Spanisch und Deutsch für Kinder, Jugendliche und Erwachsene. Ausgezeichnete Schule, ESB-Prüfungsvorbereitung.",
-      skip: "Zum Inhalt springen",
+    fr: {
+      meta_title: "Lexis · École de langues | Agioi Anargyroi, Athènes",
+      meta_desc: "École de langues Lexis Giannoulatou à Agioi Anargyroi, Athènes. Anglais, espagnol et français pour enfants, adolescents et adultes. École primée, préparation aux examens ESB.",
+      skip: "Aller au contenu",
 
-      nav_home: "Start", nav_school: "Die Schule", nav_languages: "Sprachen",
-      nav_exams: "Methode", nav_schedule: "Stundenplan", nav_contact: "Kontakt",
-      nav_cta: "Platz buchen",
+      nav_home: "Accueil", nav_school: "L’école", nav_languages: "Langues",
+      nav_exams: "Méthode", nav_schedule: "Horaires", nav_contact: "Contact",
+      nav_cta: "Réserver une place",
 
-      hero_kicker: "Agioi Anargyroi · Englisch · Spanisch · Deutsch",
-      hero_h1: 'Eine Sprache lernen, <span class="hl">die bleibt</span>',
-      hero_sub: "Kleine Gruppen, praxisnaher Unterricht und kontinuierliche Prüfungsvorbereitung. Für Kinder, Jugendliche und Erwachsene.",
-      hero_cta1: "Kostenlose Einstufung buchen",
-      hero_cta2: "Zum Stundenplan",
-      hero_trust: "Ausgezeichnete Schule · Adler der Bildung 2024 · 2025 · 2026",
-      card_title: "Mein Stundenplan",
-      card_level: "3 Einheiten / Woche",
+      hero_kicker: "Agioi Anargyroi · Anglais · Espagnol · Français",
+      hero_h1: 'Apprends une langue <span class="hl">pour longtemps</span>',
+      hero_sub: "Petits groupes, cours pratiques et préparation régulière aux examens. Pour les enfants, les adolescents et les adultes.",
+      hero_cta1: "Réserver une évaluation gratuite",
+      hero_cta2: "Voir les horaires",
+      hero_trust: "École primée · Aigles de l’Éducation 2024 · 2025 · 2026",
+      card_title: "Mon emploi du temps",
+      card_level: "3 cours / semaine",
 
-      stat1_v: "3 Sprachen", stat1_l: "Englisch · Spanisch · Deutsch",
-      awards_title: "Ausgezeichnete Schule",
-      awards_sub: "Drei Jahre in Folge bei den „Adlern der Bildung“ ausgewählt.",
-      stat2_l: "zertifiziertes ESB-Prüfungszentrum",
-      stat3_v: "bis zu [6]", stat3_l: "Schüler pro Gruppe · <em>zu bestätigen</em>",
-      stat4_v: "[25]+ Jahre", stat4_l: "in Agioi Anargyroi · <em>zu bestätigen</em>",
+      stat1_v: "3 langues", stat1_l: "Anglais · Espagnol · Français",
+      awards_title: "Une école primée",
+      awards_sub: "Sélectionnée aux « Aigles de l’Éducation » trois années consécutives.",
+      stat2_l: "centre d’examen ESB certifié",
+      stat3_v: "jusqu’à [6]", stat3_l: "élèves par groupe · <em>à confirmer</em>",
+      stat4_v: "[25]+ ans", stat4_l: "à Agioi Anargyroi · <em>à confirmer</em>",
 
-      about_title: "Über uns",
-      about_p1: "Die Sprachschule <strong>Lexis</strong> befindet sich in Agioi Anargyroi und unterrichtet Englisch, Spanisch und Deutsch für alle Altersgruppen. Wir arbeiten in kleinen Gruppen mit modernen, praxisnahen Methoden, für stetigen Fortschritt und Prüfungserfolg.",
-      about_p2: "<em>Platzhaltertext: mit der Geschichte und Philosophie der Schule ergänzen.</em>",
-      about_journey: "Von der Einstufung zum Zertifikat",
-      about_b1: "Kostenlose Einstufung",
-      about_b2: "Kleine, praxisnahe Kurse",
-      about_b3: "Systematische Prüfungsvorbereitung",
-      about_b4: "Dein Zertifikat",
+      about_title: "Quelques mots sur nous",
+      about_p1: "L’école de langues <strong>Lexis</strong>, située à Agioi Anargyroi, enseigne l’anglais, l’espagnol et le français à tous les âges. Nous travaillons en petits groupes avec des méthodes modernes et pratiques, pour progresser régulièrement et réussir les examens.",
+      about_p2: "<em>Texte provisoire : à compléter avec l’histoire et la philosophie de l’école.</em>",
+      about_journey: "De l’évaluation au diplôme",
+      about_b1: "Évaluation gratuite du niveau",
+      about_b2: "Petits groupes, cours pratiques",
+      about_b3: "Préparation régulière aux examens",
+      about_b4: "Ton diplôme",
 
-      lang_title: "Wähle deine Sprache",
-      lang_sub: "Von den ersten Schritten bis zum C2-Zertifikat, mit einem Programm für jedes Alter.",
-      lang_en_name: "Englisch",
-      lang_en_desc: 'Alle Stufen A1–C2. Vorbereitung auf ESB und <span class="muted">[Cambridge, LanguageCert, Michigan (zu bestätigen)]</span>.',
-      lang_es_name: "Spanisch",
-      lang_es_desc: 'Alle Stufen. Vorbereitung auf <span class="muted">[DELE / LanguageCert USAL esPro (zu bestätigen)]</span>.',
-      lang_de_name: "Deutsch",
-      lang_de_desc: 'Alle Stufen. Vorbereitung auf <span class="muted">[Goethe-Zertifikat / ÖSD (zu bestätigen)]</span>.',
-      lang_more: "Ebenfalls: <strong>Französisch</strong> <em>(zu bestätigen)</em>",
+      lang_title: "Choisis ta langue",
+      lang_sub: "Des premiers pas au diplôme C2, avec un programme adapté à chaque âge.",
+      lang_details: "Niveaux",
+      lang_en_name: "Anglais",
+      lang_en_desc: 'Tous les niveaux A1–C2. Préparation aux examens ESB et <span class="muted">[Cambridge, LanguageCert, Michigan (à confirmer)]</span>.',
+      lang_es_name: "Espagnol",
+      lang_es_desc: 'Tous les niveaux. Préparation aux examens <span class="muted">[DELE / LanguageCert USAL esPro (à confirmer)]</span>.',
+      lang_fr_name: "Français",
+      lang_fr_desc: "Tous les niveaux A1–C2. Cours de français axés sur la communication, la compréhension et l’expression écrite.",
 
-      method_title: "Wie wir unterrichten",
-      method_sub: "<em>Text bestätigen / anpassen</em>",
-      m1_t: "Kleine Gruppen", m1_d: "Wenige Schüler, damit jeder in jeder Stunde spricht.",
-      m2_t: "Praxisnahes Lernen", m2_d: "Rollenspiele, Projekte und kreative Aktivitäten.",
-      m3_t: "Prüfungsvorbereitung", m3_d: "Regelmäßige Probeprüfungen und gezieltes Feedback.",
-      m4_t: "Fortschrittskontrolle", m4_d: "Regelmäßiger Kontakt mit den Eltern und individuelle Ziele.",
+      method_title: "Comment nous apprenons",
+      method_sub: "<em>Textes à confirmer ou à adapter</em>",
+      m1_t: "Petits groupes", m1_d: "Peu d’élèves, pour que chacun puisse s’exprimer à chaque cours.",
+      m2_t: "Apprentissage pratique", m2_d: "Jeux de rôle, projets et activités créatives.",
+      m3_t: "Préparation aux examens", m3_d: "Examens blancs réguliers et retours ciblés.",
+      m4_t: "Suivi des progrès", m4_d: "Échanges réguliers avec les parents et objectifs individuels.",
 
-      ages_title: "Für jedes Alter",
-      age1_tag: "KINDER", age1_t: "Grundschule", age1_d: "Erster Kontakt mit der Sprache durch Spielen.",
-      age2_tag: "JUGENDLICHE", age2_t: "Mittel- & Oberstufe", age2_d: "Ein sicherer Weg zu den Zertifikaten.",
-      age3_tag: "ERWACHSENE", age3_t: "Flexible Kurse", age3_d: "Für Beruf, Studium oder Reisen.",
-      age4_tag: "INTENSIV", age4_t: "Zertifikat in 1 Jahr", age4_d: "Schnellvorbereitung für B2 &amp; C2.",
+      ages_title: "Pour tous les âges",
+      age1_tag: "ENFANTS", age1_t: "&lt;12 ans", age1_d: "Découvrir la langue en jouant.",
+      age2_tag: "ADOLESCENTS", age2_t: "13–18 ans", age2_d: "Un parcours structuré vers les diplômes.",
+      age3_tag: "ADULTES", age3_t: "19–99+ ans", age3_d: "Pour le travail, les études ou les voyages.",
+      age4_tag: "INTENSIF", age4_t: "Un diplôme en 1 an", age4_d: "Préparation accélérée aux niveaux B2 et C2.",
 
-      sched_title: "Stundenplan &amp; Anmeldung",
-      sched_intro: "Der genaue Stundenplan der Gruppen wird jeden September festgelegt.",
-      enrol_label: "ANMELDUNG",
-      enrol_value: "Täglich 10:00–12:00 &amp; 18:00–20:00",
-      enrol_note: "ab 1. September <em>(zu bestätigen)</em>",
-      th_day: "Tag", th_hours: "Unterrichtszeiten",
-      day_mon: "Montag", day_tue: "Dienstag", day_wed: "Mittwoch", day_thu: "Donnerstag",
-      day_fri: "Freitag", day_sat: "Samstag", day_sun: "Sonntag",
-      sched_h_mon: "15:00–21:00 · Gruppen für Kinder, Jugendliche &amp; Erwachsene",
+      sched_title: "Horaires et inscriptions",
+      sched_intro: "Les horaires détaillés des groupes sont fixés chaque septembre.",
+      enrol_label: "INSCRIPTIONS",
+      enrol_value: "Chaque jour 10:00–12:00 et 18:00–20:00",
+      enrol_note: "à partir du 1er septembre <em>(à confirmer)</em>",
+      th_day: "Jour", th_hours: "Horaires des cours",
+      day_mon: "Lundi", day_tue: "Mardi", day_wed: "Mercredi", day_thu: "Jeudi",
+      day_fri: "Vendredi", day_sat: "Samedi", day_sun: "Dimanche",
+      sched_h_mon: "15:00–21:00 · groupes pour enfants, adolescents et adultes",
       sched_h_full: "15:00–21:00",
       sched_h_fri: "15:00–20:00",
-      sched_h_sat: "Probeprüfungen nach Vereinbarung",
-      sched_h_sun: "Geschlossen",
-      sched_note: "Beispielhafte Platzhalterzeiten. Durch den echten Stundenplan ersetzen.",
+      sched_h_sat: "Examens blancs sur rendez-vous",
+      sched_h_sun: "Fermé",
+      sched_note: "Horaires donnés à titre d’exemple. À remplacer par les horaires réels.",
 
-      tst_title: "Was Eltern sagen",
-      tst_1: "[Elternzitat, noch hinzuzufügen. Wir können Bewertungen von Facebook / „Adler der Bildung“ übernehmen.]",
-      tst_1_by: "Name G. · Elternteil",
-      tst_2: "[Absolventenzitat, noch hinzuzufügen. Z. B. Prüfungserfolg, Verhältnis zu den Lehrkräften.]",
-      tst_2_by: "Name M. · C2-Absolvent",
+      tst_title: "Les avis des parents",
+      tst_1: "[Témoignage d’un parent à ajouter. Possibilité de reprendre un avis Facebook ou des « Aigles de l’Éducation ».]",
+      tst_1_by: "Nom G. · Parent",
+      tst_2: "[Témoignage d’un ancien élève à ajouter : réussite aux examens, relation avec les enseignants, etc.]",
+      tst_2_by: "Nom M. · Diplômé C2",
 
-      ct_title: "Kontakt",
-      ct_sub: "Komm in der Schule vorbei, ruf an oder schreib uns. Wir antworten am selben Tag.",
-      ct_addr_label: "ADRESSE", ct_phone_label: "TELEFON", ct_social_label: "SOCIAL",
-      form_name: "Vollständiger Name *", form_phone: "Telefon *", form_email: "E-Mail",
-      form_lang: "Sprache von Interesse", form_age: "Alter / Klasse des Schülers", form_found: "Wie du uns gefunden hast",
-      form_msg: "Deine Nachricht", form_submit: "Senden",
-      form_privacy: "Mit dem Senden akzeptierst du die [Datenschutzerklärung].",
-      form_thanks: "Danke! Wir melden uns in Kürze bei dir.",
+      ct_title: "Contact",
+      ct_sub: "Viens nous rencontrer, appelle-nous ou écris-nous. Nous répondons le jour même.",
+      ct_addr_label: "ADRESSE", ct_phone_label: "TÉLÉPHONE", ct_social_label: "RÉSEAUX SOCIAUX",
+      form_name: "Nom complet *", form_phone: "Téléphone *", form_email: "E-mail",
+      form_lang: "Langue souhaitée", form_age: "Âge / classe de l’élève", form_found: "Comment nous as-tu connus ?",
+      form_msg: "Ton message", form_submit: "Envoyer",
+      form_privacy: "En envoyant ce formulaire, tu acceptes la [Politique de confidentialité].",
+      form_thanks: "Merci ! Nous te contacterons très bientôt.",
 
-      ft_tagline: "Sprachschule Giannoulatou · Georgiou Papandreou 77, Agioi Anargyroi.",
+      ft_tagline: "École de langues Giannoulatou · Georgiou Papandreou 77, Agioi Anargyroi.",
       ft_rights: "© 2026 Lexis – A. Giannoulatou & Co.",
-      ft_pages: "SEITEN", ft_lang: "SPRACHE"
+      ft_pages: "PAGES", ft_lang: "LANGUE"
     }
   };
 
-  var SUPPORTED = ["el", "en", "es", "de"];
+  var SUPPORTED = ["el", "en", "es", "fr"];
   var DEFAULT_LANG = "el";
   var STORE_KEY = "lexis_lang";
 
@@ -463,6 +463,18 @@
     });
   }
 
+  function initCourseButtons() {
+    document.querySelectorAll(".language-button").forEach(function (button) {
+      var details = document.getElementById(button.getAttribute("aria-controls"));
+      if (!details) return;
+      button.addEventListener("click", function () {
+        var expanded = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", String(!expanded));
+        details.hidden = expanded;
+      });
+    });
+  }
+
   /* ---------------------------------------------------------
      Contact form
      Works out of the box with Netlify Forms when deployed
@@ -499,6 +511,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     initNav();
     initLangButtons();
+    initCourseButtons();
     initForm();
   });
 })();

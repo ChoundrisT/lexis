@@ -1,7 +1,7 @@
 # Λέξις · Κέντρο Ξένων Γλωσσών (website)
 
 Static one-page site for the Lexis Giannoulatou language school in Agioi Anargyroi.
-Greek by default, with an **EL / EN / ES / DE** language switcher.
+Greek by default, with an **EL / EN / ES / FR** language switcher.
 
 ## Stack
 
@@ -25,7 +25,7 @@ cd site
 python3 -m http.server 8000      # then open http://localhost:8000
 ```
 
-Add `?lang=en` (or `es` / `de`) to the URL to force a language while testing.
+Add `?lang=en` (or `es` / `fr`) to the URL to force a language while testing.
 
 ## Deploy
 
@@ -36,7 +36,7 @@ Drop the `site/` folder on any of these. All free, all static:
 
 ## Editing content
 
-**All text lives in `assets/js/main.js`** in the `I18N` object, one block per language (`el`, `en`, `es`, `de`).
+**All text lives in `assets/js/main.js`** in the `I18N` object, one block per language (`el`, `en`, `es`, `fr`).
 Each key matches a `data-i18n="..."` attribute in `index.html`. Change the value, done.
 Values may contain simple HTML (`<strong>`, `<em>`, `<span class="hl">`, `<br>`).
 
@@ -56,8 +56,7 @@ already POSTs the form and shows a thank-you message either way.
 Search for `[` and `επιβεβαίωση` / `to confirm` / `placeholder`:
 
 - Class hours + enrolment dates/times (currently from the Instagram post)
-- Exam list per language (Cambridge / LanguageCert / Michigan, DELE, Goethe / ÖSD)
-- Whether **French** is offered
+- Exam list per language (Cambridge / LanguageCert / Michigan, DELE, French exam options (to confirm))
 - Years in operation, students per class
 - Real parent/graduate testimonials
 - `about_p2`: the school's story / philosophy
