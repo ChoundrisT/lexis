@@ -29,7 +29,9 @@
       card_title: "Το πρόγραμμά μου",
       card_level: "3 μαθήματα / εβδομάδα",
 
-      stat1_v: "3 χρονιές", stat1_l: "βραβείο «Αετοί της Εκπαίδευσης»",
+      stat1_v: "3 γλώσσες", stat1_l: "Αγγλικά · Ισπανικά · Γερμανικά",
+      awards_title: "Βραβευμένο σχολείο",
+      awards_sub: "Επιλογή στους «Αετοί της Εκπαίδευσης» τρεις συνεχόμενες χρονιές.",
       stat2_l: "πιστοποιημένο εξεταστικό κέντρο",
       stat3_v: "έως [6]", stat3_l: "μαθητές ανά τμήμα · <em>επιβεβαίωση</em>",
       stat4_v: "[25]+ χρόνια", stat4_l: "στους Αγίους Αναργύρους · <em>επιβεβαίωση</em>",
@@ -118,7 +120,9 @@
       card_title: "My timetable",
       card_level: "3 lessons / week",
 
-      stat1_v: "3 years", stat1_l: "“Eagles of Education” award winner",
+      stat1_v: "3 languages", stat1_l: "English · Spanish · German",
+      awards_title: "An award-winning school",
+      awards_sub: "Selected for the “Eagles of Education” three years running.",
       stat2_l: "certified ESB examination centre",
       stat3_v: "up to [6]", stat3_l: "students per class · <em>to confirm</em>",
       stat4_v: "[25]+ years", stat4_l: "in Agioi Anargyroi · <em>to confirm</em>",
@@ -207,7 +211,9 @@
       card_title: "Mi horario",
       card_level: "3 clases / semana",
 
-      stat1_v: "3 años", stat1_l: "premio “Águilas de la Educación”",
+      stat1_v: "3 idiomas", stat1_l: "Inglés · Español · Alemán",
+      awards_title: "Escuela premiada",
+      awards_sub: "Seleccionada en las «Águilas de la Educación» tres años seguidos.",
       stat2_l: "centro examinador ESB certificado",
       stat3_v: "hasta [6]", stat3_l: "alumnos por grupo · <em>por confirmar</em>",
       stat4_v: "[25]+ años", stat4_l: "en Agioi Anargyroi · <em>por confirmar</em>",
@@ -296,7 +302,9 @@
       card_title: "Mein Stundenplan",
       card_level: "3 Einheiten / Woche",
 
-      stat1_v: "3 Jahre", stat1_l: "Preis „Adler der Bildung“",
+      stat1_v: "3 Sprachen", stat1_l: "Englisch · Spanisch · Deutsch",
+      awards_title: "Ausgezeichnete Schule",
+      awards_sub: "Drei Jahre in Folge bei den „Adlern der Bildung“ ausgewählt.",
       stat2_l: "zertifiziertes ESB-Prüfungszentrum",
       stat3_v: "bis zu [6]", stat3_l: "Schüler pro Gruppe · <em>zu bestätigen</em>",
       stat4_v: "[25]+ Jahre", stat4_l: "in Agioi Anargyroi · <em>zu bestätigen</em>",

@@ -234,6 +234,27 @@ em { font-style: normal; color: var(--pink); font-weight: 700; }
 .stat__l { display: block; font-size: .78rem; color: #6A4E12; font-weight: 700; margin-top: 2px; }
 .stat__l em { color: #6A4E12; font-style: italic; font-weight: 700; }
 
+/* ---------- Awards ---------- */
+.awards .lead { margin: 10px auto 0; max-width: 44ch; }
+.award-row {
+  list-style: none; margin: 36px 0 0; padding: 0;
+  display: flex; justify-content: center; align-items: flex-start;
+  gap: clamp(12px, 4vw, 48px); flex-wrap: wrap;
+}
+.award { position: relative; width: clamp(112px, 20vw, 148px); }
+.award__badge { display: block; width: 100%; height: auto; overflow: visible; color: #1FC7C7; }
+.award__yr {
+  fill: var(--ink);
+  font-family: var(--font-display); font-weight: 800; font-size: 29px;
+}
+.award--teal .award__badge { color: #1FC7C7; }
+.award--pink .award__badge { color: #FF5CA8; }
+.award--coral .award__badge { color: #FF7A45; }
+.vh {
+  position: absolute; width: 1px; height: 1px;
+  overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+}
+
 /* ---------- Generic sections ---------- */
 .section { padding: clamp(52px, 8vw, 78px) 0; }
 .section--paper { background: var(--paper); }
