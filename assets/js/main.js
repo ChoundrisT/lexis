@@ -73,6 +73,13 @@
       enrol_label: "ΕΓΓΡΑΦΕΣ",
       enrol_value: "Καθημερινά 10:00–12:00 &amp; 18:00–20:00",
       enrol_note: "από 1η Σεπτεμβρίου <em>(επιβεβαίωση)</em>",
+      office_open: "Το σχολείο δέχεται επισκέψεις τώρα",
+      office_closed: "Δεν θα μπορέσετε να μας βρείτε τώρα, γιατί κάνουμε μάθημα",
+      office_resting: "Δεν θα μπορέσετε να μας βρείτε τώρα, γιατί ξεκουραζόμαστε",
+      office_closes_in: "Οι ώρες επίσκεψης τελειώνουν σε",
+      office_opens_in: "Οι επόμενες ώρες επίσκεψης αρχίζουν σε",
+      office_remaining: "μένουν",
+      time_h: "ώ.", time_m: "λ.",
       th_day: "Ημέρα", th_hours: "Ώρες μαθημάτων",
       day_mon: "Δευτέρα", day_tue: "Τρίτη", day_wed: "Τετάρτη", day_thu: "Πέμπτη",
       day_fri: "Παρασκευή", day_sat: "Σάββατο", day_sun: "Κυριακή",
@@ -165,6 +172,13 @@
       enrol_label: "ENROLMENT",
       enrol_value: "Daily 10:00–12:00 &amp; 18:00–20:00",
       enrol_note: "from 1 September <em>(to confirm)</em>",
+      office_open: "The school is open for visits now",
+      office_closed: "You won’t be able to reach us right now because we’re teaching",
+      office_resting: "You won’t be able to reach us right now because we’re resting",
+      office_closes_in: "Visiting hours end in",
+      office_opens_in: "Visiting hours begin in",
+      office_remaining: "left",
+      time_h: "h", time_m: "min",
       th_day: "Day", th_hours: "Class hours",
       day_mon: "Monday", day_tue: "Tuesday", day_wed: "Wednesday", day_thu: "Thursday",
       day_fri: "Friday", day_sat: "Saturday", day_sun: "Sunday",
@@ -257,6 +271,13 @@
       enrol_label: "INSCRIPCIONES",
       enrol_value: "A diario 10:00–12:00 y 18:00–20:00",
       enrol_note: "desde el 1 de septiembre <em>(por confirmar)</em>",
+      office_open: "La escuela recibe visitas ahora",
+      office_closed: "No podrás localizarnos ahora porque estamos dando clase",
+      office_resting: "No podrás localizarnos ahora porque estamos descansando",
+      office_closes_in: "El horario de visitas termina en",
+      office_opens_in: "El horario de visitas comienza en",
+      office_remaining: "restante",
+      time_h: "h", time_m: "min",
       th_day: "Día", th_hours: "Horas de clase",
       day_mon: "Lunes", day_tue: "Martes", day_wed: "Miércoles", day_thu: "Jueves",
       day_fri: "Viernes", day_sat: "Sábado", day_sun: "Domingo",
@@ -349,6 +370,13 @@
       enrol_label: "INSCRIPTIONS",
       enrol_value: "Chaque jour 10:00–12:00 et 18:00–20:00",
       enrol_note: "à partir du 1er septembre <em>(à confirmer)</em>",
+      office_open: "L’école accueille les visites maintenant",
+      office_closed: "Vous ne pourrez pas nous joindre maintenant, car nous sommes en cours",
+      office_resting: "Vous ne pourrez pas nous joindre maintenant, car nous nous reposons",
+      office_closes_in: "Les heures de visite se terminent dans",
+      office_opens_in: "Les heures de visite commencent dans",
+      office_remaining: "restant",
+      time_h: "h", time_m: "min",
       th_day: "Jour", th_hours: "Horaires des cours",
       day_mon: "Lundi", day_tue: "Mardi", day_wed: "Mercredi", day_thu: "Jeudi",
       day_fri: "Vendredi", day_sat: "Samedi", day_sun: "Dimanche",
@@ -422,6 +450,8 @@
       btn.setAttribute("aria-pressed", String(btn.getAttribute("data-lang") === lang));
     });
 
+    updateOfficeStatus();
+
     try { localStorage.setItem(STORE_KEY, lang); } catch (e) {}
   }
 
@@ -473,6 +503,81 @@
         details.hidden = expanded;
       });
     });
+  }
+
+  function athensMinutesNow() {
+    var parts = new Intl.DateTimeFormat("en-GB", {
+      timeZone: "Europe/Athens",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hourCycle: "h23"
+    }).formatToParts(new Date());
+    var values = {};
+    parts.forEach(function (part) { values[part.type] = Number(part.value); });
+    return values.hour * 60 + values.minute + values.second / 60;
+  }
+
+  function formatOfficeDuration(minutes, dict) {
+    var rounded = Math.max(1, Math.ceil(minutes));
+    var hours = Math.floor(rounded / 60);
+    var mins = rounded % 60;
+    var pieces = [];
+    if (hours) pieces.push(hours + " " + dict.time_h);
+    if (mins || !hours) pieces.push(mins + " " + dict.time_m);
+    return pieces.join(" ");
+  }
+
+  function updateOfficeStatus() {
+    var status = document.querySelector("[data-office-status]");
+    if (!status) return;
+    var flipClock = document.querySelector("[data-office-flip]");
+    var dict = I18N[document.documentElement.lang] || I18N[DEFAULT_LANG];
+    var now = athensMinutesNow();
+    var windows = [[600, 720], [1080, 1200]];
+    var current = windows.find(function (window) {
+      return now >= window[0] && now < window[1];
+    });
+    var isOpen = Boolean(current);
+    var remaining;
+    if (isOpen) {
+      remaining = current[1] - now;
+    } else if (now < windows[0][0]) {
+      remaining = windows[0][0] - now;
+    } else if (now < windows[1][0] && now >= windows[0][1]) {
+      remaining = windows[1][0] - now;
+    } else {
+      remaining = 1440 - now + windows[0][0];
+    }
+    status.dataset.state = isOpen ? "open" : "closed";
+    var isResting = now >= 1200 || now < windows[0][0];
+    status.querySelector("[data-office-message]").textContent = isOpen
+      ? dict.office_open
+      : (isResting ? dict.office_resting : dict.office_closed);
+    status.querySelector("[data-office-countdown]").textContent =
+      (isOpen ? dict.office_closes_in : dict.office_opens_in) + " " + formatOfficeDuration(remaining, dict);
+    if (flipClock) {
+      var rounded = Math.max(1, Math.ceil(remaining));
+      var hours = Math.floor(rounded / 60);
+      var mins = rounded % 60;
+      flipClock.dataset.state = isOpen ? "open" : "closed";
+      setFlipValue(flipClock.querySelector("[data-office-hours]"), String(hours).padStart(2, "0"));
+      setFlipValue(flipClock.querySelector("[data-office-minutes]"), String(mins).padStart(2, "0"));
+      flipClock.querySelector("[data-office-flip-label]").textContent = dict.office_remaining;
+    }
+  }
+
+  function setFlipValue(tile, value) {
+    if (!tile || tile.textContent === value) return;
+    tile.textContent = value;
+    tile.classList.remove("is-flipping");
+    void tile.offsetWidth;
+    tile.classList.add("is-flipping");
+  }
+
+  function initOfficeStatus() {
+    updateOfficeStatus();
+    window.setInterval(updateOfficeStatus, 30000);
   }
 
   /* ---------------------------------------------------------
@@ -576,6 +681,7 @@
     initLangButtons();
     initCourseButtons();
     initJourney();
+    initOfficeStatus();
     initForm();
   });
 })();
