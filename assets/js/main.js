@@ -480,6 +480,69 @@
      Works out of the box with Netlify Forms when deployed
      there; falls back to a friendly confirmation otherwise.
      --------------------------------------------------------- */
+  function initJourney() {
+    var track = document.querySelector(".journey__steps");
+    if (!track) return;
+    var slides = Array.from(track.children);
+    var trail = track.parentElement.querySelector(".journey__trail");
+    var trailPath = trail && trail.querySelector("path");
+    var pagination = document.createElement("div");
+    pagination.className = "journey__pagination";
+    var buttons = slides.map(function (slide, index) {
+      var button = document.createElement("button");
+      button.type = "button";
+      button.setAttribute("aria-label", String(index + 1) + " / " + slides.length);
+      button.addEventListener("click", function () {
+        track.scrollTo({
+          left: index * track.clientWidth,
+          behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
+        });
+      });
+      pagination.appendChild(button);
+      return button;
+    });
+    track.after(pagination);
+    function update() {
+      var active = Math.round(track.scrollLeft / (track.clientWidth || 1));
+      buttons.forEach(function (button, index) {
+        button.setAttribute("aria-current", String(index === active));
+      });
+    }
+    function updateTrail() {
+      if (!trail || !trailPath || window.matchMedia("(max-width: 700px)").matches) return;
+      var trailRect = trail.getBoundingClientRect();
+      var points = slides.map(function (slide) {
+        var dotRect = slide.querySelector(".journey__dot").getBoundingClientRect();
+        return {
+          x: ((dotRect.left + dotRect.width / 2 - trailRect.left) / trailRect.width) * 1000,
+          y: ((dotRect.top + dotRect.height / 2 - trailRect.top) / trailRect.height) * 390
+        };
+      });
+      var p1 = points[0];
+      var p2 = points[1];
+      var p3 = points[2];
+      var p4 = points[3];
+      var topSpan = p2.x - p1.x;
+      var bottomSpan = p3.x - p4.x;
+      trailPath.setAttribute("d", [
+        "M", p1.x, p1.y,
+        "C", p1.x + topSpan * .18, p1.y - 24, p1.x + topSpan * .29, p1.y - 8, p1.x + topSpan * .43, p1.y - 31,
+        "C", p1.x + topSpan * .62, p1.y - 48, p1.x + topSpan * .87, p2.y - 39, p2.x, p2.y,
+        "C", p2.x + 42, p2.y + 44, p3.x + 42, p3.y - 48, p3.x, p3.y,
+        "C", p3.x - bottomSpan * .17, p3.y + 31, p3.x - bottomSpan * .31, p3.y + 12, p3.x - bottomSpan * .46, p3.y + 32,
+        "C", p3.x - bottomSpan * .65, p3.y + 48, p4.x + bottomSpan * .2, p4.y + 19, p4.x, p4.y
+      ].join(" "));
+    }
+    track.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", function () {
+      update();
+      updateTrail();
+    });
+    window.addEventListener("load", updateTrail);
+    update();
+    updateTrail();
+  }
+
   function initForm() {
     var form = document.querySelector(".contact__form");
     if (!form) return;
@@ -512,6 +575,7 @@
     initNav();
     initLangButtons();
     initCourseButtons();
+    initJourney();
     initForm();
   });
 })();

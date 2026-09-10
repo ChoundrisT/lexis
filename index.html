@@ -19,8 +19,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&family=Ubuntu:wght@700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css?v=trail-wide-25">
 </head>
 <body>
 
@@ -353,9 +353,26 @@
       <h2 class="center on-dark" data-i18n="method_title">Πώς μαθαίνουμε</h2>
       <div class="journey journey--on-dark">
         <p class="journey__title" data-i18n="about_journey">Από την αξιολόγηση στο πτυχίο</p>
-        <svg class="journey__trail" viewBox="0 0 240 320" aria-hidden="true" preserveAspectRatio="none">
-          <path d="M276 40 C276 86 36 66 36 120 C36 158 240 150 240 200 C240 244 0 240 0 280"
-                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.1 11" vector-effect="non-scaling-stroke"/>
+        <svg class="journey__trail" viewBox="0 0 1000 390" aria-hidden="true" preserveAspectRatio="none">
+          <defs>
+            <filter id="trail-wobble" x="-3%" y="-8%" width="106%" height="116%">
+              <feTurbulence type="fractalNoise" baseFrequency=".012 .045" numOctaves="2" seed="7" result="noise"/>
+              <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+          </defs>
+          <path d="M0 92
+                   C82 66 151 74 226 54
+                   C310 32 394 47 472 29
+                   C559 13 650 39 733 25
+                   C835 10 928 53 978 117
+                   C1004 149 991 180 1000 207
+                   C1011 236 991 264 1000 287
+                   C920 304 859 329 776 330
+                   C686 331 622 355 531 344
+                   C444 334 366 363 280 347
+                   C185 330 104 352 0 337"
+                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                stroke-dasharray="0.1 11" vector-effect="non-scaling-stroke" filter="url(#trail-wobble)"/>
         </svg>
         <ol class="journey__steps">
           <li class="journey__step" style="--c:#1FC7C7"><span class="journey__dot">1</span><span class="journey__label" data-i18n="about_b1">Δωρεάν αξιολόγηση επιπέδου</span></li>
@@ -666,6 +683,6 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js" defer></script>
+<script src="assets/js/main.js?v=carousel-3" defer></script>
 </body>
 </html>
