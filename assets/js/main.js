@@ -15,6 +15,7 @@
       meta_title: "Λέξις · Κέντρο Ξένων Γλωσσών | Άγιοι Ανάργυροι",
       meta_desc: "Κέντρο Ξένων Γλωσσών Λέξις Γιαννουλάτου στους Αγίους Αναργύρους. Αγγλικά, Ισπανικά, Γαλλικά για παιδιά, εφήβους και ενήλικες. Βραβευμένο σχολείο, προετοιμασία εξετάσεων ESB.",
       skip: "Μετάβαση στο περιεχόμενο",
+      to_top: "Επιστροφή στην αρχή",
 
       nav_home: "Αρχική", nav_school: "Το Σχολείο", nav_languages: "Γλώσσες",
       nav_exams: "Μέθοδος", nav_schedule: "Ωράριο", nav_contact: "Επικοινωνία",
@@ -116,6 +117,7 @@
       meta_title: "Lexis · Language School | Agioi Anargyroi, Athens",
       meta_desc: "Lexis Giannoulatou language school in Agioi Anargyroi, Athens. English, Spanish and French for children, teenagers and adults. Award-winning school, ESB exam preparation.",
       skip: "Skip to content",
+      to_top: "Back to top",
 
       nav_home: "Home", nav_school: "The School", nav_languages: "Languages",
       nav_exams: "Method", nav_schedule: "Schedule", nav_contact: "Contact",
@@ -217,6 +219,7 @@
       meta_title: "Lexis · Escuela de idiomas | Agioi Anargyroi, Atenas",
       meta_desc: "Escuela de idiomas Lexis Giannoulatou en Agioi Anargyroi, Atenas. Inglés, español y francés para niños, adolescentes y adultos. Escuela premiada, preparación de exámenes ESB.",
       skip: "Saltar al contenido",
+      to_top: "Volver arriba",
 
       nav_home: "Inicio", nav_school: "La Escuela", nav_languages: "Idiomas",
       nav_exams: "Método", nav_schedule: "Horario", nav_contact: "Contacto",
@@ -318,6 +321,7 @@
       meta_title: "Lexis · École de langues | Agioi Anargyroi, Athènes",
       meta_desc: "École de langues Lexis Giannoulatou à Agioi Anargyroi, Athènes. Anglais, espagnol et français pour enfants, adolescents et adultes. École primée, préparation aux examens ESB.",
       skip: "Aller au contenu",
+      to_top: "Retour en haut",
 
       nav_home: "Accueil", nav_school: "L’école", nav_languages: "Langues",
       nav_exams: "Méthode", nav_schedule: "Horaires", nav_contact: "Contact",
@@ -645,6 +649,26 @@
     updateTrail();
   }
 
+  function initToTop() {
+    var btn = document.querySelector(".to-top");
+    if (!btn) return;
+    var shown = false;
+    function onScroll() {
+      var past = (window.scrollY || document.documentElement.scrollTop || 0) > 500;
+      if (past === shown) return;
+      shown = past;
+      btn.classList.toggle("is-visible", past);
+    }
+    btn.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
+      });
+    });
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
+
   function initForm() {
     var form = document.querySelector(".contact__form");
     if (!form) return;
@@ -680,5 +704,6 @@
     initJourney();
     initOfficeStatus();
     initForm();
+    initToTop();
   });
 })();
