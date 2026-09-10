@@ -643,7 +643,7 @@ em { font-style: normal; color: var(--pink); font-weight: 700; }
 .enrol__flip-clock {
   --clock-color: #FF6B72;
   position: absolute; z-index: 2;
-  right: -58px; bottom: -34px;
+  right: -34px; bottom: -64px;
   min-width: 146px; padding: 9px 10px 8px;
   border-radius: 8px; background: var(--clock-color);
   border: 3px solid var(--ink);
@@ -671,8 +671,9 @@ em { font-style: normal; color: var(--pink); font-weight: 700; }
 }
 .enrol__flip-digits.is-flipping { animation: flip-down .42s ease-out; }
 .enrol__flip-clock small {
-  display: block; margin-top: 4px;
-  color: var(--ink); font-size: .58rem; font-weight: 900; line-height: 1;
+  display: block; margin-bottom: 5px;
+  color: var(--ink); font-size: .58rem; font-weight: 900; line-height: 1.15;
+  text-transform: uppercase; letter-spacing: .04em;
 }
 @keyframes flip-down {
   0% { transform: rotateX(-82deg); filter: brightness(.72); }

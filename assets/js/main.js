@@ -76,9 +76,8 @@
       office_open: "Το σχολείο δέχεται επισκέψεις τώρα",
       office_closed: "Δεν θα μπορέσετε να μας βρείτε τώρα, γιατί κάνουμε μάθημα",
       office_resting: "Δεν θα μπορέσετε να μας βρείτε τώρα, γιατί ξεκουραζόμαστε",
-      office_closes_in: "Οι ώρες επίσκεψης τελειώνουν σε",
-      office_opens_in: "Οι επόμενες ώρες επίσκεψης αρχίζουν σε",
-      office_remaining: "μένουν",
+      office_closes_in: "Διαθέσιμοι ακόμη για",
+      office_opens_in: "Ξανά διαθέσιμοι σε",
       time_h: "ώ.", time_m: "λ.",
       th_day: "Ημέρα", th_hours: "Ώρες μαθημάτων",
       day_mon: "Δευτέρα", day_tue: "Τρίτη", day_wed: "Τετάρτη", day_thu: "Πέμπτη",
@@ -175,9 +174,8 @@
       office_open: "The school is open for visits now",
       office_closed: "You won’t be able to reach us right now because we’re teaching",
       office_resting: "You won’t be able to reach us right now because we’re resting",
-      office_closes_in: "Visiting hours end in",
-      office_opens_in: "Visiting hours begin in",
-      office_remaining: "left",
+      office_closes_in: "Reachable for the next",
+      office_opens_in: "Reachable again in",
       time_h: "h", time_m: "min",
       th_day: "Day", th_hours: "Class hours",
       day_mon: "Monday", day_tue: "Tuesday", day_wed: "Wednesday", day_thu: "Thursday",
@@ -274,9 +272,8 @@
       office_open: "La escuela recibe visitas ahora",
       office_closed: "No podrás localizarnos ahora porque estamos dando clase",
       office_resting: "No podrás localizarnos ahora porque estamos descansando",
-      office_closes_in: "El horario de visitas termina en",
-      office_opens_in: "El horario de visitas comienza en",
-      office_remaining: "restante",
+      office_closes_in: "Disponibles aún durante",
+      office_opens_in: "Disponibles de nuevo en",
       time_h: "h", time_m: "min",
       th_day: "Día", th_hours: "Horas de clase",
       day_mon: "Lunes", day_tue: "Martes", day_wed: "Miércoles", day_thu: "Jueves",
@@ -373,9 +370,8 @@
       office_open: "L’école accueille les visites maintenant",
       office_closed: "Vous ne pourrez pas nous joindre maintenant, car nous sommes en cours",
       office_resting: "Vous ne pourrez pas nous joindre maintenant, car nous nous reposons",
-      office_closes_in: "Les heures de visite se terminent dans",
-      office_opens_in: "Les heures de visite commencent dans",
-      office_remaining: "restant",
+      office_closes_in: "Joignables encore pendant",
+      office_opens_in: "De nouveau joignables dans",
       time_h: "h", time_m: "min",
       th_day: "Jour", th_hours: "Horaires des cours",
       day_mon: "Lundi", day_tue: "Mardi", day_wed: "Mercredi", day_thu: "Jeudi",
@@ -518,16 +514,6 @@
     return values.hour * 60 + values.minute + values.second / 60;
   }
 
-  function formatOfficeDuration(minutes, dict) {
-    var rounded = Math.max(1, Math.ceil(minutes));
-    var hours = Math.floor(rounded / 60);
-    var mins = rounded % 60;
-    var pieces = [];
-    if (hours) pieces.push(hours + " " + dict.time_h);
-    if (mins || !hours) pieces.push(mins + " " + dict.time_m);
-    return pieces.join(" ");
-  }
-
   function updateOfficeStatus() {
     var status = document.querySelector("[data-office-status]");
     if (!status) return;
@@ -554,8 +540,6 @@
     status.querySelector("[data-office-message]").textContent = isOpen
       ? dict.office_open
       : (isResting ? dict.office_resting : dict.office_closed);
-    status.querySelector("[data-office-countdown]").textContent =
-      (isOpen ? dict.office_closes_in : dict.office_opens_in) + " " + formatOfficeDuration(remaining, dict);
     if (flipClock) {
       var rounded = Math.max(1, Math.ceil(remaining));
       var hours = Math.floor(rounded / 60);
@@ -563,7 +547,8 @@
       flipClock.dataset.state = isOpen ? "open" : "closed";
       setFlipValue(flipClock.querySelector("[data-office-hours]"), String(hours).padStart(2, "0"));
       setFlipValue(flipClock.querySelector("[data-office-minutes]"), String(mins).padStart(2, "0"));
-      flipClock.querySelector("[data-office-flip-label]").textContent = dict.office_remaining;
+      flipClock.querySelector("[data-office-flip-label]").textContent =
+        isOpen ? dict.office_closes_in : dict.office_opens_in;
     }
   }
 
